@@ -2,13 +2,13 @@
 
 int main(int argc,char** argv) {
 	
-	int N = 331; 
+	int N = 2016;
 	
 	int d, n;
 	
-	int array[N];                    //почему массив длинной именно N? да потому что вывод точно не будет занимать < N значений 
+	int array[100];
 	
-	printf("N = %i:  vivod: 0x", N);
+	printf("N = %i:\tvivod: 0x", N);
 	
 	for (n = 0; N != 0; ++n) {
 		
@@ -51,7 +51,35 @@ int main(int argc,char** argv) {
 		
 		--n;
 		
-		printf("%d", array[n]); //вывод символов в ASCII, как исправить?
+		if (array[n] == 65){
+			
+			printf("A");
+			
+		} else if (array[n] == 66){
+			
+			printf("B");
+			
+		} else if (array[n] == 67){
+			
+			printf("C");
+			
+		} else if (array[n] == 68){
+			
+			printf("D");
+			
+		} else if (array[n] == 69){
+			
+			printf("E");
+			
+		} else if (array[n] == 70){
+			
+			printf("F");
+			
+		} else {
+			
+			printf("%i", array[n]);
+			
+		}
 		
 	}
 	
